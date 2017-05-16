@@ -1,0 +1,34 @@
+
+<div class="demo-container demo-layout-transparent">
+<mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed mdl-layout-mode="waterfall" #mdlLayout1="mdlLayout">
+        <mdl-layout-header>
+          <mdl-layout-header-row>
+            <mdl-layout-title>Title</mdl-layout-title>
+            <mdl-layout-spacer></mdl-layout-spacer>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link">Link</a>
+            </nav>
+          </mdl-layout-header-row>
+        </mdl-layout-header>
+        <mdl-layout-drawer>
+         <mdl-layout-title>Title</mdl-layout-title>
+         <nav class="mdl-navigation">
+            <a class="mdl-navigation__link"  (click)="mdlLayout1.closeDrawer()"> <mdl-icon>home</mdl-icon> Home</a>
+            <a class="mdl-navigation__link"  (click)="mdlLayout1.closeDrawer()"> <mdl-icon>face</mdl-icon> Food Menu</a>
+             <a class="mdl-navigation__link"  (click)="mdlLayout1.closeDrawer()"><mdl-icon>shopping_basket</mdl-icon> Order</a>
+            <a class="mdl-navigation__link"  (click)="mdlLayout1.closeDrawer()"><mdl-icon>account_box</mdl-icon> Login</a>
+            
+            <a class="mdl-navigation__link"  (click)="mdlLayout1.closeDrawer()"><mdl-icon>shopping_basket</mdl-icon> Order</a>
+         </nav>
+        </mdl-layout-drawer>
+        <mdl-layout-content class="demo-content">
+
+Hello World
+
+        </mdl-layout-content>
+         
+</mdl-layout>
+</div>
+
+    
